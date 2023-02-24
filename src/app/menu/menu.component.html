@@ -1,0 +1,37 @@
+
+<div class="body">
+    <h1 class="info">Menu/our dishes</h1>
+    <hr class="border border-dark border-3 opacity-75">
+    
+    <div class="container fluid row row-cols-1 row-cols-md-3 row-cols-lg-4 mediacards mx-auto text-center gap-3">
+
+    <div *ngFor="let o of menu; index as x" class="card mx-auto border-3">
+        <h3>{{ o.name}}</h3>
+        <hr class="border border-primary border-3 opacity-75">
+        <div class="container"><img class="img-fluid img-thumbnail pic" src="{{o.pic}}" alt="error 404"></div>
+        <hr class="border border-primary border-3 opacity-75">
+        <h3>price: {{ o.price }}$</h3>
+        <hr class="border border-primary border-3 opacity-75">
+        <ng-container *ngIf="o.description; else elseNotDone">
+            <p class="des">Description:</p>
+            <p>{{ o.description }}</p>
+          </ng-container>
+      
+          <ng-template #elseNotDone>
+            <p class="text-danger">No description on this item</p>
+          </ng-template>
+    
+        <hr class="border border-primary border-3 opacity-75">
+        <div class="container buttonholder">
+
+          <button class="btn btn-warning" routerLink="/menu/{{x}}" >More Info</button>
+          <div></div>
+          <button class="btn btn-success" (click)="addToCart(o)">Order</button>
+
+        </div>
+        
+    </div>
+
+  </div>
+
+</div>

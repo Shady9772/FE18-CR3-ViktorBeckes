@@ -1,0 +1,25 @@
+.body{
+    background-color: aqua;
+    min-height: 250vh;
+    font-family: "Brush Script MT";
+}
+
+.card{
+    background-color: bisque;
+}
+
+.buttonholder{
+    padding-bottom: 10px;
+}
+
+.info{
+    text-align: center;
+}
+
+.pic{
+    height: 150px;
+}
+
+.gap-3{
+    padding-bottom: 10px;
+}

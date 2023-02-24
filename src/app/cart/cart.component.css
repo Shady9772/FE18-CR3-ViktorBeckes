@@ -1,0 +1,14 @@
+.body{
+    background-color: aqua;
+    font-family: "Brush Script MT";
+    text-align: center;
+    height: 200vh;
+}
+
+.cardbody{
+    background-color: bisque;
+}
+
+.pic{
+    height: 150px;
+}

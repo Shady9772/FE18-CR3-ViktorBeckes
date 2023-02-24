@@ -1,0 +1,27 @@
+.body{
+    background-color: aqua;
+    font-family: "Brush Script MT";
+    text-align: center;
+    height: 15vh;
+}
+    
+.pic{
+    background-image: url(/assets/slices.jpg);
+    height: 200vh;
+    text-align: center;
+}
+
+
+.name{
+    opacity: 0.7;
+    color: black;
+    font-family: "Brush Script MT";
+    position: relative;
+    top: 200px;
+    background-color: aqua;
+    width: 50%;
+    height: 200px;
+}
+.btn{
+    opacity: 0.9;
+}

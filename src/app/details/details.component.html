@@ -1,0 +1,15 @@
+<div class="body">
+    <h1 class="info">Details about the dish</h1>
+    <hr class="border border-dark border-3 opacity-75">
+
+<div class="container" *ngIf="dish">
+    <h1>{{dish.name}}</h1>
+    <div><img class="img-fluid img-thumbnail picholder" src="{{dish.pic}}" alt="error 404"></div>
+    <hr class="border border-primary border-3 opacity-75">
+    <h1 class="text-warning">Description</h1>
+    <h2>{{dish.description}}</h2>    
+    <hr class="border border-primary border-3 opacity-75">
+    <h2 class="text-success">Price: {{dish.price}}$</h2>
+    <button class="btn btn-success" (click)="addToCart()">Add To Cart</button>
+</div>
+</div>
